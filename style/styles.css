@@ -92,12 +92,120 @@
     margin-right: 132px;
 }
 
+.sponsored-section{
+    margin-top: 70px;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 61px;
+}
 
+.card{
+    max-width: 1440px;
+}
 
+.title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 100px;
+}
 
+.product-name{
+    font-size: 28px;
+    font-weight: 500;
+    color: #18191F;
+}
 
+.price{
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+}
 
+.product-details{
+    font-size: 14px;
+    font-weight: 700;
+    color: #787885;
+}
 
+.card-container{
+    max-width: 1047px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    margin: 100px 197px;
+    gap: 30px;
+    
+}
+
+.card-container .s{
+    padding: 17px;
+    box-shadow:  0 0 40px 0 rgba(0, 0, 0, 0.15);
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.btn-s{
+    max-width: 1047px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 197px;
+    border: none;
+    color: #E02C6D;
+    align-items: center;
+    cursor: pointer;
+}
+
+.featured{
+    max-width: 1440px;
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    gap: 96px;
+}
+
+.featured-container h2{
+    font-size: 38px;
+    font-weight: 700;
+    color: #0A0826;
+}
+
+.featured-container p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #6C6C6C;
+}
+
+.bt{
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 1);
+    color: #FFFFFF;
+    margin-top: 150px;
+    padding-bottom: 50px;
+}
+
+footer h2{
+    margin-top: 150px;
+    padding-top: 50px;
+}
+
+footer img{
+    margin-left: 16px;
+    width: 24px;
+    height: 24px;
+}
 
 @media screen and (max-width:576px) {
     .nav-menu li, .mobile{
@@ -145,6 +253,33 @@
     font-weight: 500;}
     .btn{
         margin: 20px 110px;
+    }
+    .card-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    margin: 30px 110px 30px 30px;
+    
+}
+
+.featured{
+    flex-direction: column-reverse;
+}
+.featured-container h2{
+    max-width: 329px;
+    text-align: center;
+    font-size: 24px;}
+    .featured-container p{
+        max-width: 329px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .bt{
+        margin-left: 93px;
+    }
+    .featured-img img{
+        width: 25%;
+        margin-left: 10px;
     }
 
 }
